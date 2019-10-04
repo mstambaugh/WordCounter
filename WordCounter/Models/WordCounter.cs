@@ -9,11 +9,12 @@ namespace WordCounter.Models
         {
             bool result = true;
 
-            if (inputWord.Length < inputSentence.Length)
+            if (inputWord.Length > inputSentence.Length)
             {
                 result = false;
             }
             return result;
         }
+        public static 
     }
 }
