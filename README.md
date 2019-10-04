@@ -1,12 +1,12 @@
 # _WordCounter_
 
-#### A C# testing program using classes, namespaces, methods for  _**Epicodus**_ Week 9.
+#### A C# testing program using classes, namespaces, and methods for _**Epicodus**_ Week 9.
 
 #### By _**Molly Stambaugh**_
 
 ## Description
 
-_This Program _
+_This Program collects an input word and sentence from the user, counts the number of times the word appears in the sentence, and returns that value to the user_
 
 ## Specifications
 
@@ -36,7 +36,7 @@ _No known bugs. Please report any to mstambaugh_
 
 ## Technologies Used
 
-_C#, VSCode, .NET_
+_C#, VSCode, .NET, MSTest_
 
 ### License
 
