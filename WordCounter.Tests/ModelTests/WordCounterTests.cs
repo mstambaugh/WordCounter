@@ -20,11 +20,11 @@ namespace WordCounter.Tests
             Assert.AreEqual(true, result);
         }
         [TestMethod]
-        public void CheckForMatchInSentence_WordEqualsArrayWord_Integer()
+        public void CountMatchesInSentence_WordEqualsArrayWord_Integer()
         {
             // Arrange
             string inputWord = "dog";
-            string inputSentence = "Dog is God in reverse. I have a crazy cattle dog. His name is Blue";
+            string inputSentence = "Dog is God in reverse. I have a crazy cattle dog. His name is Blue and he is cute af.";
             // Act
             int result = RepeatCounter.CountMatchesInSentence(inputWord, inputSentence);
             // Assert

@@ -2,7 +2,7 @@ Specs :
 
 1- collect a word from the user 
 2- collect a sentence from the user
-3- simple check for valid entries- sentence longer than word
+3- simple check for valid entries- sentence longer than word, both strings
 4- check for word matches
 5- count times word matches occur in sentence
 6- return the count to the user
@@ -23,9 +23,9 @@ _Description_
 
 | Behavior | Input | Expected Output |
 |:-:|:-:|:-:|
-| | |
-|  |  |  |
-| |  | |
+| Program collects a word from the user and stores it as a string value| dog | "dog" |
+| Program collect a sentence from the user and stores it as a string value | dogs r cute | "dogs r cute" |
+| Program runs a method to determine that the user entered sentence is longer than the user word to make the program more fun | sentence and word strings | True or False |
 |  | |  |
 |  | | |
 
