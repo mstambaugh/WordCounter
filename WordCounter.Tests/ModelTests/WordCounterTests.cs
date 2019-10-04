@@ -24,11 +24,11 @@ namespace WordCounter.Tests
         {
             // Arrange
             string inputWord = "dog";
-            string inputSentence = "blue is a dog";
+            string inputSentence = "My dog is named Blue and he is a cattle dog and a crazy dog";
             // Act
-            int result = RepeatCounter.CheckForMatchInSentence(inputWord, inputSentence);
+            int result = RepeatCounter.CountMatchesInSentence(inputWord, inputSentence);
             // Assert
-            Assert.AreEqual(9, result);
+            Assert.AreEqual(3, result);
         }
     }
 }

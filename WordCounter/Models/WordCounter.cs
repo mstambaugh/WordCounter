@@ -15,35 +15,19 @@ namespace WordCounter.Models
             }
             return result;
         }
-        // public static string CountInSentence(string inputWord, string inputSentence)
-        // {
-        //     int counter = 0; 
-        //     string oneWord = inputWord;
-        //     string[] words = inputSentence.Split();
-
-        //     foreach (string word in words)
-        //     {
-        //
-        //         CheckForMatch(oneWord);
-        //         counter += 1;
-        //     }
-
-        //     return counter;
-        // }
-        public static bool CheckForMatchInSentence(string inputWord, string inputSentence)
+        public static int CountMatchesInSentence(string inputWord, string inputSentence)
         {
             string matchWord = inputWord;
-            string sentence = inputSentence;
+            // string sentence = inputSentence;
             int counter = 0;
             string[] words = inputSentence.Split();
             foreach (string word in words)
+            {
+                if (word.Equals(matchWord) == true)
                 {
-                    if (word.Equals(matchWord))
-                    {
-                        result = true;
-                        counter += 1;
-                    }             
-                }  
+                    counter += 1;
+                }             
+            }  
             return counter;
         }
     }
