@@ -17,10 +17,10 @@ namespace WordCounter.Models
         }
         public static int CountMatchesInSentence(string inputWord, string inputSentence)
         {
-            string matchWord = inputWord;
+            string matchWord = inputWord.ToUpper();
             // string sentence = inputSentence;
             int counter = 0;
-            string[] words = inputSentence.Split();
+            string[] words = inputSentence.ToUpper().Split('.', ',', ' ');
             foreach (string word in words)
             {
                 if (word.Equals(matchWord) == true)
