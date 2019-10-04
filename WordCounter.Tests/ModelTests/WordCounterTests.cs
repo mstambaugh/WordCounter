@@ -20,15 +20,15 @@ namespace WordCounter.Tests
             Assert.AreEqual(true, result);
         }
         [TestMethod]
-        public void CheckForMatch_WordEqualsArrayWord_True()
+        public void CheckForMatchInSentence_WordEqualsArrayWord_Integer()
         {
             // Arrange
             string inputWord = "dog";
             string inputSentence = "blue is a dog";
             // Act
-            bool result = RepeatCounter.CheckForMatch(inputWord, inputSentence);
+            int result = RepeatCounter.CheckForMatchInSentence(inputWord, inputSentence);
             // Assert
-            Assert.AreEqual(true, result);
+            Assert.AreEqual(9, result);
         }
     }
 }

@@ -32,16 +32,19 @@ namespace WordCounter.Models
         // }
         public static bool CheckForMatchInSentence(string inputWord, string inputSentence)
         {
-            bool result = false;
-            string word = inputWord;
+            string matchWord = inputWord;
             string sentence = inputSentence;
-
-            if (word.Equals(""))
-            {
-                result = true;
-            }
-            
-            return result;
+            int counter = 0;
+            string[] words = inputSentence.Split();
+            foreach (string word in words)
+                {
+                    if (word.Equals(matchWord))
+                    {
+                        result = true;
+                        counter += 1;
+                    }             
+                }  
+            return counter;
         }
     }
 }
