@@ -19,7 +19,16 @@ namespace WordCounter.Tests
             // Assert
             Assert.AreEqual(true, result);
         }
-        [TestMethd]
-        public void 
+        [TestMethod]
+        public void CheckForMatch_WordEqualsArrayWord_True()
+        {
+            // Arrange
+            string inputWord = "dog";
+            string inputSentence = "blue is a dog";
+            // Act
+            bool result = RepeatCounter.CheckForMatch(inputWord, inputSentence);
+            // Assert
+            Assert.AreEqual(true, result);
+        }
     }
 }
